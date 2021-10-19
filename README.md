@@ -62,7 +62,6 @@ cd app
 git pull origin main
 ```
 
-
 ## [Setiap deploy] go test ./..
 ## [Setiap deploy] docker-compose down
 ## [Setiap deploy] docker-compose up
