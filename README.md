@@ -27,7 +27,7 @@ sudo apt-get install python3-pip
 sudo pip3 install docker-compose
 ```
 
-## [Sekali] Buka security group untuk port 8080 & 33306
+## [Sekali] Buka security group untuk port 8080 & 3306
 
 Klik pada bagian link security group
 
