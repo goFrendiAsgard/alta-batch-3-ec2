@@ -1,4 +1,4 @@
-# Deployment
+# Porvisioning
 
 Perlu login via ssh ke VM:
 
@@ -55,6 +55,9 @@ go version
 echo 'PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 ```
 
+# Deployment
+
+
 ## [Setiap deploy] Git pull origin master
 
 ```sh
@@ -63,5 +66,13 @@ git pull origin main
 ```
 
 ## [Setiap deploy] go test ./..
-## [Setiap deploy] docker-compose down
-## [Setiap deploy] docker-compose up
+
+```
+go test -v ./...
+```
+
+## [Setiap deploy] docker-compose down && docker-compose up
+
+```sh
+docker-compose down && docker-compose up --build -d
+```
