@@ -76,3 +76,13 @@ go test -v ./...
 ```sh
 docker-compose down && docker-compose up --build -d
 ```
+
+# Setup Github Action
+
+Kita akan menggunakan [SSH for GitHub Actions](https://github.com/appleboy/ssh-action)
+
+Untuk itu kita perlu menambahkan beberapa secret:
+
+![](./screenshots/set-secret.png)
+
+Selain itu, kita juga perlu menambahkan [deploy.yml](./.github/workflows/deploy.yml)

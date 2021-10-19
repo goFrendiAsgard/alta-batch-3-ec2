@@ -21,7 +21,7 @@ func TestHelloValid(t *testing.T) {
 		t.Errorf("should return 200, get: %d", rec.Code)
 	}
 	actual := rec.Body.String()
-	expected := "hello world"
+	expected := "hello world 🌏"
 	if actual != expected {
 		t.Errorf("should return %s, get: %s", expected, actual)
 	}
