@@ -10,6 +10,10 @@ RUN mkdir /app
 ## directory
 WORKDIR /app
 
+COPY go.mod /app
+COPY go.sum /app
+RUN go mod download
+
 ## We copy everything in the root directory
 ## into our /app directory
 ADD . /app
