@@ -86,3 +86,6 @@ Untuk itu kita perlu menambahkan beberapa secret:
 ![](./screenshots/set-secret.png)
 
 Selain itu, kita juga perlu menambahkan [deploy.yml](./.github/workflows/deploy.yml)
+
+
+>⚠️ __NOTE:__ Pantau tab `action`, jika ada yang salah dan proses build memakan waktu yang lama, silahkan `cancel workflow`
