@@ -9,7 +9,8 @@ services:
     ports: 
       - 3306:3306
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - './data:/bitnami/mysql/data'
+      - './init.sql:/docker-entrypoint-initdb.d/init.sql'
     healthcheck:
       test: ["CMD", "mysql", "-u", "root",  "-ptoor", "-e", "show schemas"]
       interval: 10s 
