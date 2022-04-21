@@ -11,6 +11,7 @@ func HandleRoutes(e *echo.Echo, jwtSecret string, personModel appModel.PersonMod
 	e.GET("/", Hello)
 	e.GET("/add/:firstNum/:secondNum/", Add)
 	e.GET("/add/:firstNum/:secondNum", Add)
+	e.GET("/add/:firstNum/:secondNum", Sub)
 
 	personController := NewPersonController(jwtSecret, personModel)
 	e.POST("/persons", personController.Add)
